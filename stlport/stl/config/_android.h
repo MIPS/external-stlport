@@ -31,8 +31,13 @@
 #undef _NOTHREADS
 
 // Little endian platform.
+#ifdef HAVE_LITTLE_ENDIAN
 #define _STLP_LITTLE_ENDIAN 1
-
+#endif
+#ifdef HAVE_LITTLE_ENDIAN
+#define _STLP_BIG_ENDIAN 1
+#endif
+ 
 // No <exception> headers
 #define _STLP_NO_EXCEPTION_HEADER 1
 
