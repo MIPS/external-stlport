@@ -26,7 +26,7 @@
 #  endif
 
 #  if defined(_STLP_USE_EXCEPTIONS) || \
-	!(!defined(HAVE_ANDROID_OS) && defined(_MIPS_SIM) && defined(_ABIO32) && (_MIPS_SIM == _ABIO32))
+	!(!defined(ANDROID) && defined(_MIPS_SIM) && defined(_ABIO32) && (_MIPS_SIM == _ABIO32))
 
 #    ifndef _STLP_INTERNAL_CSTRING
 #      include <stl/_cstring.h>
