@@ -160,7 +160,7 @@
 #  if defined (_MIPSEB) || defined (__sparc) || defined (_AIX) || \
       defined (__hpux) || defined (macintosh) || defined (_MAC)
 #    define _STLP_BIG_ENDIAN 1
-#  elif defined (__i386) || defined (_M_IX86) || defined (_M_ARM) || \
+#  elif defined (__i386) || defined (_M_IX86) || defined(__arm__) || defined (_M_ARM) || \
         defined (__amd64__) || defined (_M_AMD64) || defined (__x86_64__) || \
         defined (__alpha__) || defined (_MIPSEL)
 #    define _STLP_LITTLE_ENDIAN 1
