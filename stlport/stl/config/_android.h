@@ -30,13 +30,10 @@
 // Enable thread support
 #undef _NOTHREADS
 
-// Little endian platform.
-#ifdef HAVE_LITTLE_ENDIAN
-#define _STLP_LITTLE_ENDIAN 1
-#endif
-#ifdef HAVE_LITTLE_ENDIAN
-#define _STLP_BIG_ENDIAN 1
-#endif
+// Endianess
+// Let features.h select endianess based on preprocessor definitions
+//#define _STLP_LITTLE_ENDIAN 1
+//#define _STLP_BIG_ENDIAN 1
  
 // No <exception> headers
 #define _STLP_NO_EXCEPTION_HEADER 1
